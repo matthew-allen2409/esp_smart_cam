@@ -1,0 +1,46 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+[0m
+[0;33m--- 0x403775bb: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m--- 0x40055bc0: rom_exit_critical_phy in ROM
+[0m
+[0;33m--- 0x42084cb1: wr_rx_gain_mem at ??:?
+--- 0x42084cc1: wr_rx_gain_mem at ??:?
+[0m
+[0;33m--- 0x403775b8: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+--- 0x4201878f: ll_cam_vsync_isr at /home/matt/esp/hello_world/components/esp32-camera/target/esp32s3/ll_cam.c:106
+--- 0x40376979: shared_intr_isr at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:464
+--- 0x40377bed: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x4208524d: bt_chan_pwr_interp at ??:?
+--- 0x420842f1: chip_v7_set_chan_misc at ??:?
+--- 0x4208437f: chip_v7_set_chan at ??:?
+--- 0x42084461: set_chanfreq at ??:?
+--- 0x42081c45: phy_change_channel at ??:?
+--- 0x42039eb2: ieee80211_phy_init at ??:?
+--- 0x4203a2b5: chm_set_current_channel at ??:?
+--- 0x4203d8be: ieee80211_update_channel at ??:?
+--- 0x420453fb: cnx_csa_fn at ??:?
+--- 0x42045e3a: cnx_do_handoff_internal at ??:?
+--- 0x4203f925: wifi_sta_connect_internal_process at ??:?
+--- 0x42042b64: wifi_ipc_process at ??:?
+--- 0x42040856: ieee80211_ioctl_process at ??:?
+--- 0x42043291: ieee80211_ioctl at ??:?
+--- 0x42044ad3: esp_wifi_ipc_internal at ??:?
+--- 0x420407a9: esp_wifi_sta_connect_internal at ??:?
+--- 0x4206ff9f: wpa_sta_connect at /home/matt/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c:263
+--- 0x42046295: cnx_remove_all_rc at ??:?
+--- 0x420462dd: cnx_start_handoff_cb at ??:?
+--- 0x4204dedd: clear_bss_queue at ??:?
+--- 0x4204e38b: scan_inter_channel_timeout_process at ??:?
+--- 0x42039f8f: chm_end_op at ??:?
+--- 0x42039fb1: chm_end_op_timeout_process at ??:?
+--- 0x42043521: ieee80211_ap_sa_query_timeout at ??:?
+--- 0x420437d7: ieee80211_timer_do_process at ??:?
+--- 0x40386aad: ppTask at ??:?
+--- 0x4037e719: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0m

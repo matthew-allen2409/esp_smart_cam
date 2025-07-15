@@ -1,0 +1,29 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x403775bb: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403775b8: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+--- 0x42018727: ll_cam_vsync_isr at /home/matt/esp/hello_world/components/esp32-camera/target/esp32s3/ll_cam.c:106
+--- 0x40376979: shared_intr_isr at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:464
+--- 0x40377bed: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x4202a115: mbedtls_md_setup at /home/matt/esp/esp-idf/components/mbedtls/mbedtls/library/md.c:448
+--- 0x42024088: hmac_vector at /home/matt/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c:327
+--- 0x420241ad: hmac_sha1_vector at /home/matt/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c:395
+--- 0x42078c21: sha1_prf at /home/matt/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c:51
+--- 0x420788e9: wpa_pmk_to_ptk at /home/matt/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.c:1256
+--- 0x42079229: wpa_derive_ptk at /home/matt/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c:626
+--- 0x4207a07a: wpa_supplicant_process_1_of_4 at /home/matt/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c:702
+--- 0x4207a9c6: wpa_sm_rx_eapol at /home/matt/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c:2045
+--- 0x42098fd1: sta_rx_eapol at ??:?
+--- 0x40385cb6: sta_input at ??:?
+--- 0x40385e2d: sta_rx_cb at ??:?
+--- 0x40388ba9: ppRxPkt at ??:?
+--- 0x40386ada: ppTask at ??:?
+--- 0x4037e719: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0m

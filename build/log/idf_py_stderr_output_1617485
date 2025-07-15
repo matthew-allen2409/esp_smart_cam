@@ -1,0 +1,19 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40056f60: memcpy in ROM
+[0m
+[0;33m--- 0x403775bb: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m--- 0x403775b8: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+--- 0x4201871f: ll_cam_vsync_isr at /home/matt/esp/hello_world/components/esp32-camera/target/esp32s3/ll_cam.c:106
+--- 0x40376979: shared_intr_isr at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:464
+--- 0x40377bed: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x4037b64b: xt_utils_wait_for_intr at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42004432: esp_vApplicationIdleHook at /home/matt/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037f8d9: prvIdleTask at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4341
+--- 0x4037e719: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0m
