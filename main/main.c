@@ -5,6 +5,7 @@
 #include "esp_camera.h"
 #include "esp_log.h"
 #include "gpio.h"
+#include "sleep.h"
 #include "camera.h"
 #include "motion.h"
 #include "wifi.h"
@@ -15,9 +16,6 @@ static const char *TAG = "CAMERA";
 
 void app_main(void)
 {
-    init_gpio();
-    motion_init();
-
     esp_err_t err;
     for (int i = 0; i < 5; i++) {
         err = esp_camera_init(&camera_config);
@@ -47,4 +45,8 @@ void app_main(void)
     } else {
         ESP_LOGI(HTTP_TAG, "http server started");
     }
+
+    init_gpio();
+    motion_init();
+    sleep_init();
 }

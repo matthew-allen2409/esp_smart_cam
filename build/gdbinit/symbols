@@ -17,4 +17,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /home/matt/esp/hello_world/build/hello_world.elf
+file /home/matt/esp/hello_world/build/smart_cam.elf

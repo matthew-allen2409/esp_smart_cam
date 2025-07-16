@@ -1,0 +1,1122 @@
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd793
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (255) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (265) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (276) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (276) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (278) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (282) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (305) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (310) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (314) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (318) esp_psram: Speed: 40MHz[0m
+[0;32mI (321) cpu_start: Multicore app[0m
+[0;32mI (1055) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1064) cpu_start: Pro cpu start user code[0m
+[0;32mI (1064) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1064) app_init: Application information:[0m
+[0;32mI (1064) app_init: Project name:     smart_cam[0m
+[0;32mI (1068) app_init: App version:      0bbdb44-dirty[0m
+[0;32mI (1073) app_init: Compile time:     Jul 15 2025 20:13:51[0m
+[0;32mI (1078) app_init: ELF file SHA256:  f31152d8a...[0m
+[0;32mI (1082) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (1086) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1090) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1094) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1098) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1104) heap_init: At 3FCA8B50 len 00040BC0 (258 KiB): RAM[0m
+[0;32mI (1110) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1115) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1120) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (1126) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1133) spi_flash: detected chip: gd[0m
+[0;32mI (1135) spi_flash: flash io: dio[0m
+[0;33mW (1138) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1151) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1157) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1164) main_task: Started on CPU0[0m
+[0;32mI (1174) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1174) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1184) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1194) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1194) cam_hal: cam init ok[0m
+[0;32mI (1204) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (1204) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1214) camera: Detected camera at address=0x30[0m
+[0;32mI (1214) camera: Detected OV2640 camera[0m
+[0;32mI (1214) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1294) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 375[0m
+[0;32mI (1294) cam_hal: Allocating 384000 Byte frame buffer in PSRAM[0m
+[0;32mI (1304) cam_hal: cam config ok[0m
+[0;32mI (1304) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 12[0m
+[0;32mI (1384) pp: pp rom version: e7ae62f[0m
+[0;32mI (1384) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1394) wifi:wifi driver task: 3fcc0c8c, prio:23, stack:6656, core=0[0m
+[0;32mI (1404) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (1404) wifi:wifi certification version: v7.0[0m
+[0;32mI (1404) wifi:config NVS flash: enabled[0m
+[0;32mI (1404) wifi:config nano formatting: disabled[0m
+[0;32mI (1404) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1414) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1414) wifi:Init management short buffer num: 32[0m
+[0;32mI (1414) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1424) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1424) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1434) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1434) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1444) wifi_init: rx ba win: 6[0m
+[0;32mI (1444) wifi_init: accept mbox: 6[0m
+[0;32mI (1444) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1444) wifi_init: udp mbox: 6[0m
+[0;32mI (1454) wifi_init: tcp mbox: 6[0m
+[0;32mI (1454) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1454) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1464) wifi_init: tcp mss: 1440[0m
+[0;32mI (1464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1464) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1474) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1484) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;33mW (1504) cam_hal: NO-SOI[0m
+[0;32mI (1534) wifi:mode : sta (d8:3b:da:45:d1:f8)[0m
+[0;32mI (1534) wifi:enable tsf[0m
+[0;32mI (1534) WIFI: wifi_init_sta finished[0m
+[0;32mI (1534) WIFI: connecting to the AP[0m
+[0;32mI (1544) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1544) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1554) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1564) wifi:state: assoc -> run (0x10)[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x403775bb  PS      : 0x00060033  A0      : 0x82018986  A1      : 0x3fc9d8d0  
+A2      : 0x00060c23  A3      : 0x00000001  A4      : 0x3fc9d900  A5      : 0x3fcacca0  
+A6      : 0x00060823  A7      : 0x00000000  A8      : 0x03c9b478  A9      : 0x01ffffff  
+A10     : 0x3fc9b478  A11     : 0x3fc9d8d0  A12     : 0x3fc9d900  A13     : 0x00000000  
+A14     : 0x00000000  A15     : 0x00000003  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00060c4b  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x403775b8:0x3fc9d8d0 0x42018983:0x3fc9d900 0x40376979:0x3fc9d930 0x40377bed:0x3fc9d950 0x4037b71f:0x3fcacd10 0x420044f2:0x3fcacd30 0x4037f9ad:0x3fcacd50 0x4037e7ed:0x3fcacd70
+
+
+
+
+ELF file SHA256: f31152d8a
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d49
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (255) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (265) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (275) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (275) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (282) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (304) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (314) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (317) esp_psram: Speed: 40MHz[0m
+[0;32mI (320) cpu_start: Multicore app[0m
+[0;32mI (1054) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1063) cpu_start: Pro cpu start user code[0m
+[0;32mI (1063) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1063) app_init: Application information:[0m
+[0;32mI (1063) app_init: Project name:     smart_cam[0m
+[0;32mI (1068) app_init: App version:      0bbdb44-dirty[0m
+[0;32mI (1072) app_init: Compile time:     Jul 15 2025 20:13:51[0m
+[0;32mI (1077) app_init: ELF file SHA256:  f31152d8a...[0m
+[0;32mI (1082) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (1086) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1089) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1094) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1098) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1104) heap_init: At 3FCA8B50 len 00040BC0 (258 KiB): RAM[0m
+[0;32mI (1109) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1114) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1120) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (1125) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1132) spi_flash: detected chip: gd[0m
+[0;32mI (1135) spi_flash: flash io: dio[0m
+[0;33mW (1138) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1151) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1157) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1164) main_task: Started on CPU0[0m
+[0;32mI (1174) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1174) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1184) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1194) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1194) cam_hal: cam init ok[0m
+[0;32mI (1204) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (1204) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1214) camera: Detected camera at address=0x30[0m
+[0;32mI (1214) camera: Detected OV2640 camera[0m
+[0;32mI (1214) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1294) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 375[0m
+[0;32mI (1294) cam_hal: Allocating 384000 Byte frame buffer in PSRAM[0m
+[0;32mI (1304) cam_hal: cam config ok[0m
+[0;32mI (1304) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 12[0m
+[0;32mI (1394) pp: pp rom version: e7ae62f[0m
+[0;32mI (1394) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1404) wifi:wifi driver task: 3fcc0c8c, prio:23, stack:6656, core=0[0m
+[0;32mI (1414) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (1414) wifi:wifi certification version: v7.0[0m
+[0;32mI (1414) wifi:config NVS flash: enabled[0m
+[0;32mI (1414) wifi:config nano formatting: disabled[0m
+[0;32mI (1414) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1424) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1424) wifi:Init management short buffer num: 32[0m
+[0;32mI (1434) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1434) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1434) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1444) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1444) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1454) wifi_init: rx ba win: 6[0m
+[0;32mI (1454) wifi_init: accept mbox: 6[0m
+[0;32mI (1454) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1454) wifi_init: udp mbox: 6[0m
+[0;32mI (1464) wifi_init: tcp mbox: 6[0m
+[0;32mI (1464) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1464) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1474) wifi_init: tcp mss: 1440[0m
+[0;32mI (1474) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1474) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1484) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1494) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1534) wifi:mode : sta (d8:3b:da:45:d1:f8)[0m
+[0;32mI (1534) wifi:enable tsf[0m
+[0;32mI (1534) WIFI: wifi_init_sta finished[0m
+[0;32mI (1534) WIFI: connecting to the AP[0m
+[0;32mI (1544) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1544) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1554) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1564) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1584) wifi:connected with of/malehousewives, aid = 5, channel 7, BW20, bssid = 54:af:97:17:93:83[0m
+[0;32mI (1584) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (1584) wifi:pm start, type: 1[0m
+
+[0;32mI (1584) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1594) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1604) wifi:<ba-add>idx:0 (ifx:0, 54:af:97:17:93:83), tid:7, ssn:0, winSize:64[0m
+[0;32mI (1614) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2674) esp_netif_handlers: sta ip: 192.168.0.166, mask: 255.255.255.0, gw: 192.168.0.55[0m
+[0;32mI (2674) HTTP_SERVER: http server started[0m
+[0;32mI (2674) main_task: Returned from app_main()[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+[0;32mI (6184) MOTION: motion[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40377d7b  PS      : 0x00060034  A0      : 0x80377ea1  A1      : 0x3fc9d910  
+A2      : 0x00000002  A3      : 0x00000000  A4      : 0x8201c5b4  A5      : 0x00000001  
+A6      : 0x00000001  A7      : 0x00000001  A8      : 0x80377e2c  A9      : 0x3fc9d8e0  
+A10     : 0x00000001  A11     : 0x00000000  A12     : 0xfffffffe  A13     : 0x3fcacca0  
+A14     : 0x00060923  A15     : 0x00000000  SAR     : 0x0000001f  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+Core  0 was running in ISR context:
+EPC1    : 0x42095b67  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x40377d7b
+
+
+Backtrace: 0x40377d78:0x3fc9d910 0x40377e9e:0x3fc9d930 0x40377bed:0x3fc9d950 0x4037b71f:0x3fcacd10 0x420044f2:0x3fcacd30 0x4037f9ad:0x3fcacd50 0x4037e7ed:0x3fcacd70
+
+
+Core  1 register dump:
+PC      : 0x42009009  PS      : 0x00060334  A0      : 0x82009f5a  A1      : 0x3fcb6280  
+A2      : 0x3c0b3e50  A3      : 0x00000074  A4      : 0x00060120  A5      : 0x00000080  
+A6      : 0x00000001  A7      : 0x3fca9658  A8      : 0x607fc000  A9      : 0x0000006f  
+A10     : 0x60000000  A11     : 0xffffffff  A12     : 0x00000004  A13     : 0x00060323  
+A14     : 0x3fca9708  A15     : 0x3fcad7c8  SAR     : 0x00000004  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x42009006:0x3fcb6280 0x42009f57:0x3fcb62b0 0x4200bc1a:0x3fcb62d0 0x42089946:0x3fcb62f0 0x4200b119:0x3fcb6310 0x4200bc1a:0x3fcb6330 0x4208930a:0x3fcb6350 0x4208889d:0x3fcb6370 0x420888ee:0x3fcb6390 0x42088eed:0x3fcb63b0 0x4209002b:0x3fcb63e0 0x4208fa32:0x3fcb6400 0x42089381:0x3fcb6720 0x4038503a:0x3fcb6750 0x40385005:0x3fcb6780 0x4200d4f5:0x3fcb67d0 0x4200d3c9:0x3fcb67f0 0x4037e7ed:0x3fcb6820
+
+
+
+
+ELF file SHA256: f31152d8a
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d49
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (254) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (265) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (275) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (275) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (281) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (304) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (314) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (317) esp_psram: Speed: 40MHz[0m
+[0;32mI (320) cpu_start: Multicore app[0m
+[0;32mI (1054) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1063) cpu_start: Pro cpu start user code[0m
+[0;32mI (1063) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1063) app_init: Application information:[0m
+[0;32mI (1063) app_init: Project name:     smart_cam[0m
+[0;32mI (1068) app_init: App version:      0bbdb44-dirty[0m
+[0;32mI (1072) app_init: Compile time:     Jul 15 2025 20:13:51[0m
+[0;32mI (1077) app_init: ELF file SHA256:  f31152d8a...[0m
+[0;32mI (1082) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (1086) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1089) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1093) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1097) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1104) heap_init: At 3FCA8B50 len 00040BC0 (258 KiB): RAM[0m
+[0;32mI (1109) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1114) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1120) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (1125) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1132) spi_flash: detected chip: gd[0m
+[0;32mI (1135) spi_flash: flash io: dio[0m
+[0;33mW (1138) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1151) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1157) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1164) main_task: Started on CPU0[0m
+[0;32mI (1174) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1174) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40377d9d  PS      : 0x00060034  A0      : 0x80377ea1  A1      : 0x3fc9d910  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x80376774  A5      : 0x00000000  
+A6      : 0x00000001  A7      : 0x00000001  A8      : 0x00000002  A9      : 0x60004000  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0xfffffffe  A13     : 0x3fca9b40  
+A14     : 0x3fcb5980  A15     : 0x0000000c  SAR     : 0x0000001f  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+Core  0 was running in ISR context:
+EPC1    : 0x42095b67  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x40377d9d
+
+
+Backtrace: 0x40377d9a:0x3fc9d910 0x40377e9e:0x3fc9d930 0x40377bed:0x3fc9d950 0x400559dd:0x3fca9bc0 0x4037eb6a:0x3fca9bd0 0x4200592a:0x3fca9bf0 0x42005989:0x3fca9c40 0x42019c71:0x3fca9c70 0x403761e2:0x3fca9c90 0x4037e7ed:0x3fca9cb0
+
+
+Core  1 register dump:
+PC      : 0x4037b722  PS      : 0x00060734  A0      : 0x820044f5  A1      : 0x3fcad470  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fcaa330  A5      : 0x3fcaa310  
+A6      : 0x40376110  A7      : 0x00000001  A8      : 0x8201c5be  A9      : 0x3fcad430  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fcaa310  A13     : 0x3fcaa2f0  
+A14     : 0x00000001  A15     : 0x3fcad63c  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037b71f:0x3fcad470 0x420044f2:0x3fcad490 0x4037f9ad:0x3fcad4b0 0x4037e7ed:0x3fcad4d0
+
+
+
+
+ELF file SHA256: f31152d8a
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d49
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (254) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (275) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (275) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (281) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (299) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (304) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (313) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (317) esp_psram: Speed: 40MHz[0m
+[0;32mI (320) cpu_start: Multicore app[0m
+[0;32mI (1054) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1063) cpu_start: Pro cpu start user code[0m
+[0;32mI (1063) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1063) app_init: Application information:[0m
+[0;32mI (1063) app_init: Project name:     smart_cam[0m
+[0;32mI (1067) app_init: App version:      0bbdb44-dirty[0m
+[0;32mI (1072) app_init: Compile time:     Jul 15 2025 20:13:51[0m
+[0;32mI (1077) app_init: ELF file SHA256:  f31152d8a...[0m
+[0;32mI (1081) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (1085) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1089) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1093) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1097) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1104) heap_init: At 3FCA8B50 len 00040BC0 (258 KiB): RAM[0m
+[0;32mI (1109) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1114) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1119) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (1125) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1132) spi_flash: detected chip: gd[0m
+[0;32mI (1135) spi_flash: flash io: dio[0m
+[0;33mW (1138) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1150) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1157) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1164) main_task: Started on CPU0[0m
+[0;32mI (1174) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1174) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40377d78  PS      : 0x00060034  A0      : 0x40377bf0  A1      : 0x3fc9d930  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fcad7a8  A5      : 0x4037ebf2  
+A6      : 0x00000000  A7      : 0x3fcb58b8  A8      : 0x80377ea1  A9      : 0x3fc9d910  
+A10     : 0x00000002  A11     : 0x00000000  A12     : 0x80376774  A13     : 0x00000000  
+A14     : 0x00000001  A15     : 0x00000001  SAR     : 0x0000001f  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+Core  0 was running in ISR context:
+EPC1    : 0x42095b67  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x40377d78
+
+
+Backtrace: 0x40377d75:0x3fc9d930 0x40377bed:0x3fc9d950 0x400559dd:0x3fca9bc0 0x4037eb6a:0x3fca9bd0 0x4200592a:0x3fca9bf0 0x42005989:0x3fca9c40 0x42019c71:0x3fca9c70 0x403761e2:0x3fca9c90 0x4037e7ed:0x3fca9cb0
+
+
+Core  1 register dump:
+PC      : 0x4037b722  PS      : 0x00060734  A0      : 0x820044f5  A1      : 0x3fcad470  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fcaa330  A5      : 0x3fcaa310  
+A6      : 0x40376110  A7      : 0x00000001  A8      : 0x8201c5be  A9      : 0x3fcad430  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fcaa310  A13     : 0x3fcaa2f0  
+A14     : 0x00000001  A15     : 0x3fcad63c  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037b71f:0x3fcad470 0x420044f2:0x3fcad490 0x4037f9ad:0x3fcad4b0 0x4037e7ed:0x3fcad4d0
+
+
+
+
+ELF file SHA256: f31152d8a
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d49
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (255) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (265) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (275) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (275) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (281) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (304) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (314) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (317) esp_psram: Speed: 40MHz[0m
+[0;32mI (320) cpu_start: Multicore app[0m
+[0;32mI (1054) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1063) cpu_start: Pro cpu start user code[0m
+[0;32mI (1063) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1063) app_init: Application information:[0m
+[0;32mI (1063) app_init: Project name:     smart_cam[0m
+[0;32mI (1068) app_init: App version:      0bbdb44-dirty[0m
+[0;32mI (1072) app_init: Compile time:     Jul 15 2025 20:13:51[0m
+[0;32mI (1077) app_init: ELF file SHA256:  f31152d8a...[0m
+[0;32mI (1082) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (1086) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1089) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1093) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1097) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1104) heap_init: At 3FCA8B50 len 00040BC0 (258 KiB): RAM[0m
+[0;32mI (1109) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1114) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1120) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (1125) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1132) spi_flash: detected chip: gd[0m
+[0;32mI (1135) spi_flash: flash io: dio[0m
+[0;33mW (1138) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1151) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1157) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1164) main_task: Started on CPU0[0m
+[0;32mI (1174) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1174) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1184) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1194) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1194) cam_hal: cam init ok[0m
+[0;32mI (1204) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (1204) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1214) camera: Detected camera at address=0x30[0m
+[0;32mI (1214) camera: Detected OV2640 camera[0m
+[0;32mI (1214) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1294) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 375[0m
+[0;32mI (1294) cam_hal: Allocating 384000 Byte frame buffer in PSRAM[0m
+[0;32mI (1304) cam_hal: cam config ok[0m
+[0;32mI (1304) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 12[0m
+[0;32mI (1384) pp: pp rom version: e7ae62f[0m
+[0;32mI (1384) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1394) wifi:wifi driver task: 3fcc0c8c, prio:23, stack:6656, core=0[0m
+[0;32mI (1404) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (1404) wifi:wifi certification version: v7.0[0m
+[0;32mI (1404) wifi:config NVS flash: enabled[0m
+[0;32mI (1404) wifi:config nano formatting: disabled[0m
+[0;32mI (1404) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1414) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1414) wifi:Init management short buffer num: 32[0m
+[0;32mI (1424) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1424) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1424) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1434) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1434) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1444) wifi_init: rx ba win: 6[0m
+[0;32mI (1444) wifi_init: accept mbox: 6[0m
+[0;32mI (1444) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1444) wifi_init: udp mbox: 6[0m
+[0;32mI (1454) wifi_init: tcp mbox: 6[0m
+[0;32mI (1454) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1454) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1464) wifi_init: tcp mss: 1440[0m
+[0;32mI (1464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1464) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1474) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1484) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1524) wifi:mode : sta (d8:3b:da:45:d1:f8)[0m
+[0;32mI (1524) wifi:enable tsf[0m
+[0;32mI (1524) WIFI: wifi_init_sta finished[0m
+[0;32mI (1534) WIFI: connecting to the AP[0m
+[0;32mI (1534) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1544) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1544) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1564) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1584) wifi:connected with of/malehousewives, aid = 5, channel 7, BW20, bssid = 54:af:97:17:93:83[0m
+[0;32mI (1584) wifi:security: WPA2-PSK, phy: bgn, rssi: -28[0m
+[0;32mI (1584) wifi:pm start, type: 1[0m
+
+[0;32mI (1584) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1594) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1614) wifi:<ba-add>idx:0 (ifx:0, 54:af:97:17:93:83), tid:7, ssn:0, winSize:64[0m
+[0;32mI (1634) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2654) esp_netif_handlers: sta ip: 192.168.0.166, mask: 255.255.255.0, gw: 192.168.0.55[0m
+[0;32mI (2654) HTTP_SERVER: http server started[0m
+[0;32mI (2654) main_task: Returned from app_main()[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+[0;32mI (4704) MOTION: motion[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40377daf  PS      : 0x00060034  A0      : 0x80377ea1  A1      : 0x3fc9d910  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x8201c5b4  A5      : 0x00000001  
+A6      : 0x00000001  A7      : 0x00000001  A8      : 0x00000002  A9      : 0x00000000  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0xfffffffe  A13     : 0x3fcacca0  
+A14     : 0x00060923  A15     : 0x00000000  SAR     : 0x0000001f  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+Core  0 was running in ISR context:
+EPC1    : 0x42095b67  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x40377daf
+
+
+Backtrace: 0x40377dac:0x3fc9d910 0x40377e9e:0x3fc9d930 0x40377bed:0x3fc9d950 0x4037b71f:0x3fcacd10 0x420044f2:0x3fcacd30 0x4037f9ad:0x3fcacd50 0x4037e7ed:0x3fcacd70
+
+
+Core  1 register dump:
+PC      : 0x4200900f  PS      : 0x00060334  A0      : 0x82009f5a  A1      : 0x3fcb6280  
+A2      : 0x3c0b3e50  A3      : 0x00000037  A4      : 0x00060120  A5      : 0x00000080  
+A6      : 0x00000001  A7      : 0x3fca9658  A8      : 0xffffffff  A9      : 0x00000034  
+A10     : 0x60000000  A11     : 0xffffffff  A12     : 0x00000004  A13     : 0x00060323  
+A14     : 0x3fca9708  A15     : 0x3fcad7c8  SAR     : 0x00000004  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x4200900c:0x3fcb6280 0x42009f57:0x3fcb62b0 0x4200bc1a:0x3fcb62d0 0x42089946:0x3fcb62f0 0x4200b119:0x3fcb6310 0x4200bc1a:0x3fcb6330 0x4208930a:0x3fcb6350 0x4208889d:0x3fcb6370 0x420888ee:0x3fcb6390 0x42088eed:0x3fcb63b0 0x4209002b:0x3fcb63e0 0x4208fa32:0x3fcb6400 0x42089381:0x3fcb6720 0x4038503a:0x3fcb6750 0x40385005:0x3fcb6780 0x4200d4f5:0x3fcb67d0 0x4200d3c9:0x3fcb67f0 0x4037e7ed:0x3fcb6820
+
+
+
+
+ELF file SHA256: f31152d8a
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d49
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (254) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (275) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (275) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (281) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (299) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (304) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (313) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (317) esp_psram: Speed: 40MHz[0m
+[0;32mI (320) cpu_start: Multicore app[0m
+[0;32mI (1054) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1063) cpu_start: Pro cpu start user code[0m
+[0;32mI (1063) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1063) app_init: Application information:[0m
+[0;32mI (1063) app_init: Project name:     smart_cam[0m
+[0;32mI (1067) app_init: App version:      0bbdb44-dirty[0m
+[0;32mI (1072) app_init: Compile time:     Jul 15 2025 20:13:51[0m
+[0;32mI (1077) app_init: ELF file SHA256:  f31152d8a...[0m
+[0;32mI (1081) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (1085) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1089) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1093) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1097) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1104) heap_init: At 3FCA8B50 len 00040BC0 (258 KiB): RAM[0m
+[0;32mI (1109) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1114) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1119) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (1125) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1132) spi_flash: detected chip: gd[0m
+[0;32mI (1135) spi_flash: flash io: dio[0m
+[0;33mW (1138) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1150) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1157) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1164) main_task: Started on CPU0[0m
+[0;32mI (1174) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1174) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40377b96  PS      : 0x00050034  A0      : 0x400559e0  A1      : 0x3fc9d950  
+A2      : 0x00000000  A3      : 0x3fc9b9c0  A4      : 0x40377bf0  A5      : 0x3fc9d930  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x3fcad7a8  A9      : 0x4037ebf2  
+A10     : 0x00000000  A11     : 0x3fcb58b8  A12     : 0x60004000  A13     : 0x3fc9d910  
+A14     : 0x00000000  A15     : 0x00000000  SAR     : 0x0000001f  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+Core  0 was running in ISR context:
+EPC1    : 0x42095b67  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x40377b96
+
+
+Backtrace: 0x40377b93:0x3fc9d950 0x400559dd:0x3fca9bc0 0x4037eb6a:0x3fca9bd0 0x4200592a:0x3fca9bf0 0x42005989:0x3fca9c40 0x42019c71:0x3fca9c70 0x403761e2:0x3fca9c90 0x4037e7ed:0x3fca9cb0
+
+
+Core  1 register dump:
+PC      : 0x4037b722  PS      : 0x00060734  A0      : 0x820044f5  A1      : 0x3fcad470  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fcaa330  A5      : 0x3fcaa310  
+A6      : 0x40376110  A7      : 0x00000001  A8      : 0x8201c5be  A9      : 0x3fcad430  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fcaa310  A13     : 0x3fcaa2f0  
+A14     : 0x00000001  A15     : 0x3fcad63c  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037b71f:0x3fcad470 0x420044f2:0x3fcad490 0x4037f9ad:0x3fcad4b0 0x4037e7ed:0x3fcad4d0
+
+
+
+
+ELF file SHA256: f31152d8a
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d49
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jul 13 2025 13:14:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=212f0h (135920) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00031318 vaddr=3fc9b400 size=072a8h ( 29352) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000385c8 vaddr=40374000 size=07a50h ( 31312) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9e924h (649508) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000de94c vaddr=4037ba50 size=0f99ch ( 63900) load[0m
+[0;32mI (255) esp_image: segment 5: paddr=000ee2f0 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (275) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (275) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (281) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (286) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (290) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (295) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (304) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (313) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (317) esp_psram: Speed: 40MHz[0m
+[0;32mI (320) cpu_start: Multicore app[0m

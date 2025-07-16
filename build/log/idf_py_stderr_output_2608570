@@ -1,0 +1,143 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x400451e2: ets_sha_update in ROM
+[0m
+[0;33m--- 0x403775bb: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m--- 0x403775b8: ll_cam_send_event at /home/matt/esp/hello_world/components/esp32-camera/driver/cam_hal.c:107
+--- 0x4201897b: ll_cam_vsync_isr at /home/matt/esp/hello_world/components/esp32-camera/target/esp32s3/ll_cam.c:106
+--- 0x40376979: shared_intr_isr at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:464
+--- 0x40377bed: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x4037b71f: xt_utils_wait_for_intr at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x420044ee: esp_vApplicationIdleHook at /home/matt/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037f9ad: prvIdleTask at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4341
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0;33m--- 0x4037b630: xt_utils_compare_and_set at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:216
+---  (inlined by) esp_cpu_compare_and_set at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:232
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x42095b5f: uart_hal_write_txfifo at /home/matt/esp/esp-idf/components/hal/uart_hal_iram.c:27
+--- 0x4037b630: xt_utils_compare_and_set at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:216
+---  (inlined by) esp_cpu_compare_and_set at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:232
+[0m
+[0;33m--- 0x4037b62d: xt_utils_compare_and_set at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:216
+---  (inlined by) esp_cpu_compare_and_set at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:232
+--- 0x4037e9da: spinlock_acquire at /home/matt/esp/esp-idf/components/esp_hw_support/include/spinlock.h:123
+---  (inlined by) xPortEnterCriticalTimeout at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479
+--- 0x4037e38f: vPortEnterCritical at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+---  (inlined by) xQueueGenericSendFromISR at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1205
+--- 0x40377463: gpio_isr_handler at /home/matt/esp/hello_world/main/src/gpio.c:17
+--- 0x40377e29: gpio_isr_loop at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:467
+--- 0x40377e9e: gpio_intr_service at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:489
+--- 0x40377bed: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x4037b71f: xt_utils_wait_for_intr at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x420044ee: esp_vApplicationIdleHook at /home/matt/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037f9ad: prvIdleTask at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4341
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42008fdd: uart_ll_get_txfifo_len at /home/matt/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:418
+---  (inlined by) uart_tx_char at /home/matt/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42008fda: uart_ll_get_txfifo_len at /home/matt/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:418
+---  (inlined by) uart_tx_char at /home/matt/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+--- 0x42009f2b: uart_write at /home/matt/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x4200bbee: esp_vfs_write at /home/matt/esp/esp-idf/components/vfs/vfs.c:945
+--- 0x4208993e: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x4200b0ed: console_write at /home/matt/esp/esp-idf/components/esp_vfs_console/vfs_console.c:83
+--- 0x4200bbee: esp_vfs_write at /home/matt/esp/esp-idf/components/vfs/vfs.c:945
+--- 0x42089302: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+--- 0x42088895: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x420888e6: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+--- 0x42088ee5: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x42090023: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x4208fa2a: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774
+--- 0x42089379: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x4038503a: esp_log_writev at /home/matt/esp/esp-idf/components/log/src/os/log_write.c:34
+--- 0x40385005: esp_log_write at /home/matt/esp/esp-idf/components/log/src/os/log_write.c:44
+--- 0x4200d4c9: handle_pir_gpio_event at /home/matt/esp/hello_world/main/src/motion.c:19
+--- 0x4200d39d: gpio_event_handler_task at /home/matt/esp/hello_world/main/src/gpio.c:26
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0;33m--- 0x40377e86: gpio_intr_service at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:480
+--- 0x40377bf0: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m--- 0x4037ebf2: _frxt_int_enter at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:140
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42095b5f: uart_hal_write_txfifo at /home/matt/esp/esp-idf/components/hal/uart_hal_iram.c:27
+--- 0x40377e86: gpio_intr_service at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:480
+[0m
+[0;33m--- 0x40377e83: gpio_intr_service at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:480
+--- 0x40377bed: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400559dd: _xtos_set_intlevel in ROM
+--- 0x4037eb6a: vPortClearInterruptMaskFromISR at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+---  (inlined by) vPortExitCritical at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+--- 0x42005926: esp_intr_alloc_intrstatus at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:677
+--- 0x42005985: esp_intr_alloc at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42019c69: gpio_isr_register_on_core_static at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:581
+--- 0x403761e2: ipc_task at /home/matt/esp/esp-idf/components/esp_system/esp_ipc.c:84
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037b722: esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x40376110: ipc_task at /home/matt/esp/esp-idf/components/esp_system/esp_ipc.c:53
+[0m
+[0;33m--- 0x4037b71f: xt_utils_wait_for_intr at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x420044ee: esp_vApplicationIdleHook at /home/matt/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037f9ad: prvIdleTask at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4341
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0;33m--- 0x40377b9c: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400559e0: _xtos_set_intlevel in ROM
+[0m
+[0;33m--- 0x40377bf0: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m--- 0x4037ebf2: _frxt_int_enter at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:140
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42095b5f: uart_hal_write_txfifo at /home/matt/esp/esp-idf/components/hal/uart_hal_iram.c:27
+--- 0x40377b9c: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m--- 0x40377b99: _xt_lowint1 at /home/matt/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400559dd: _xtos_set_intlevel in ROM
+--- 0x4037eb6a: vPortClearInterruptMaskFromISR at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+---  (inlined by) vPortExitCritical at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+--- 0x42005926: esp_intr_alloc_intrstatus at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:677
+--- 0x42005985: esp_intr_alloc at /home/matt/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42019c69: gpio_isr_register_on_core_static at /home/matt/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:581
+--- 0x403761e2: ipc_task at /home/matt/esp/esp-idf/components/esp_system/esp_ipc.c:84
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037b722: esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x40376110: ipc_task at /home/matt/esp/esp-idf/components/esp_system/esp_ipc.c:53
+[0m
+[0;33m--- 0x4037b71f: xt_utils_wait_for_intr at /home/matt/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /home/matt/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x420044ee: esp_vApplicationIdleHook at /home/matt/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037f9ad: prvIdleTask at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4341
+--- 0x4037e7ed: vPortTaskWrapper at /home/matt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375d49: esp_restart_noos at /home/matt/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0m

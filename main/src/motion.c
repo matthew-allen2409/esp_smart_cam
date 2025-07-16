@@ -2,6 +2,9 @@
 #include "gpio.h"
 #include "driver/gpio.h"
 #include "esp_log.h"
+#include "esp_event.h"
+
+ESP_EVENT_DEFINE_BASE(MOTION_EVENTS);
 
 void handle_pir_gpio_event(gpio_num_t pin_number)
 {
@@ -11,10 +14,12 @@ void handle_pir_gpio_event(gpio_num_t pin_number)
         case 0:
           ESP_LOGI("MOTION", "no motion");
           gpio_set_level(GPIO_LED, 1);
+          esp_event_post(MOTION_EVENTS, MOTION_ENDED, NULL, 0, 0);
           break;
         case 1:
           ESP_LOGI("MOTION", "motion");
           gpio_set_level(GPIO_LED, 0);
+          esp_event_post(MOTION_EVENTS, MOTION_DETECTED, NULL, 0, 0);
           break;
     }
 }
